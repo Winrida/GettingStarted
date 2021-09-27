@@ -2,7 +2,7 @@ package Task_33;
 
 public class Solution
 {
-    public class StaticClassExample
+    public static class StaticClassExample
     {
         private static int catCount = 0;
 
