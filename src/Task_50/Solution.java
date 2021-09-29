@@ -19,11 +19,11 @@ public class Solution
     public static ArrayList<String> fix(ArrayList<String> strings) {
 
         for (int i = 0; i < strings.size(); i++) {
-            if (strings.get(i).contains("л") == false && strings.get(i).contains("р") == true) {
+            if (!strings.get(i).contains("л") && strings.get(i).contains("р")) {
                 strings.remove(i);
                 i--;
 
-            }else if (strings.get(i).contains("л") == true && strings.get(i).contains("р") == false) {
+            }else if (strings.get(i).contains("л") && !strings.get(i).contains("р")) {
                 strings.add(i+1, strings.get(i));
                 i++;
             }
